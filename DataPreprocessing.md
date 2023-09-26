@@ -37,7 +37,7 @@ categorical variables = ['rent_approval_date', 'town', 'street_name', 'flat_type
 * **longitude** - normalization
 * **elevation** - removed (all the value is "0")
 * **subszone** - not sure what kind of encoding to apply, I think it also depends on the model we are going to use. (hard to decide personally as this one is hierarchical)
-* **planning_area** - this attribute is almost the same as town, in my opinion we should keep this one and drop the "town" as the value in "town" can be the concatenation of two towns (e.g. kallang/whampoa) which doesn't exist in "planning are". (open to discussion)
+* **planning_area** - this attribute is almost the same as town, and in my opinion we should keep this one and drop the "town" as the value in "town" can be the concatenation of two towns (e.g. kallang/whampoa). (open to discussion)
 * **region** - one hot encoding
 * **monthly_rent** - our target attribute
 
